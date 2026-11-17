@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse SuperBuy spreadsheet finds from CAFANS. Compare shoes, hoodies, T-shirts and jackets, then check sizing, warehouse photos and shipping costs.">
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>SuperBuy spreadsheet | CAFANS Finds, QC &amp; Shipping</title>
+<style>
+:root{color-scheme:light;--ink:#14271f;--muted:#475e51;--green:#174c36;--line:#cddbd0;--paper:#f5f7ef}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 Inter,system-ui,sans-serif}
+a{color:var(--green);text-underline-offset:.2em}
+a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #956500;outline-offset:3px}
+.wrap{width:min(100% - 2rem,68rem);margin:auto}
+header,footer{text-align:center;padding:1.25rem 0}
+nav a{display:inline-block;margin:.3rem .6rem}
+.hero{text-align:center;background:#163b2c;color:#fff;border-radius:1.5rem;padding:clamp(2.5rem,8vw,6rem) 1.25rem}
+h1,h2,h3{line-height:1.15}
+h1{font-size:clamp(2.4rem,7vw,5rem);letter-spacing:-.055em;margin:0}
+.hero p{max-width:37rem;margin:1.25rem auto}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem}
+.actions a{background:#dbefd0;color:#112d22;font-weight:750;padding:.75rem 1.2rem;border-radius:2rem;text-decoration:none}
+.actions a+a{background:transparent;color:#fff;border:1px solid #a4c3ae}
+section{margin:3rem 0}
+h2{font-size:clamp(1.65rem,4vw,2.4rem);margin-bottom:.5rem}
+.controls,.guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr));gap:.75rem}
+label{font-weight:700}
+input,select{display:block;width:100%;margin-top:.25rem;padding:.65rem;border:1px solid #82978a;border-radius:.5rem;background:#fff;color:var(--ink);font:inherit}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:.8rem;background:#fff}
+table{width:100%;border-collapse:collapse;text-align:left}
+th,td{padding:.75rem;border-bottom:1px solid var(--line)}
+thead{background:#e2ede1}
+tbody th{font-weight:600}
+td:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}
+tr:last-child td,tr:last-child th{border-bottom:0}
+article,details{background:#fff;border:1px solid var(--line);border-radius:.8rem;padding:1rem}
+article h3{margin-top:0}
+details{margin:.55rem 0}
+summary{cursor:pointer;font-weight:700}
+.muted,footer{color:var(--muted)}
+[hidden]{display:none!important}
+</style>
+<link rel="canonical" href="https://kakobuyfinds.github.io/pmpku/">
+</head>
+<body>
+<!-- index.html
+Search review: superbuyspreadsheet.org emphasizes catalog size and filters, superbuy-spreadsheet.org emphasizes fee tools, and rep.tools/guides/superbuy-spreadsheet explains ordering. This page uses crawlable CAFANS product rows, a price snapshot date, and category-specific photo checks.
+Submission pending until a public URL and verified properties are available. For an independent deployment, set a self-referencing canonical to its final URL. Submit that URL through Google Search Console URL Inspection and Bing Webmaster Tools URL Submission.
+https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+https://www.bing.com/webmasters/help/URL-Submission-62f2860b
+-->
+<header class="wrap">
+<nav aria-label="Page sections"><a href="#catalog">Product catalog</a><a href="#ordering">Ordering &amp; QC</a><a href="#faq">FAQ</a></nav>
+</header>
+<main class="wrap">
+<div class="hero">
+<h1>SuperBuy spreadsheet</h1>
+<p>Compare shoes and streetwear from CAFANS. Check the seller’s size chart, warehouse photos and shipping quote before sending your parcel.</p>
+<div class="actions"><a href="https://cafans.com/">SuperBuy spreadsheet</a><a href="https://cafans.com/">Buy it now</a></div>
+</div>
+<section id="catalog">
+<h2>CAFANS product catalog</h2>
+<p id="price-note" class="muted">Selected listings from CAFANS. USD estimates viewed November 18, 2026. Check the listing for current price and availability. Shipping and fees are quoted separately.</p>
+<div class="controls" id="filters" hidden>
+<label>Product name<input id="query" type="search" placeholder="Search products"></label>
+<label>Category<select id="category"><option value="">All categories</option><option>Shoes</option><option>Hoodies &amp; sweaters</option><option>T-shirts</option><option>Jackets</option></select></label>
+</div>
+<p id="count" role="status"></p>
+<div class="table-wrap" role="region" aria-label="CAFANS product listings" tabindex="0">
+<table aria-describedby="price-note">
+<thead><tr><th scope="col">Product</th><th scope="col">Category</th><th scope="col">Est. USD</th></tr></thead>
+<tbody id="products">
+<tr><th scope="row"><a href="https://cafans.com/goods-158791.html">Leather Slides</a></th><td>Shoes</td><td>$62.36</td></tr>
+<tr><th scope="row"><a href="https://cafans.com/goods-158790.html">Platform Slides</a></th><td>Shoes</td><td>$46.67</td></tr>
+<tr><th scope="row"><a href="https://cafans.com/goods-158792.html">Sweatshirt</a></th><td>Hoodies &amp; sweaters</td><td>$27.50</td></tr>
+<tr><th scope="row"><a href="https://cafans.com/goods-158278.html">Corteiz Hoodie</a></th><td>Hoodies &amp; sweaters</td><td>$27.50</td></tr>
+<tr><th scope="row"><a href="https://cafans.com/goods-158200.html">Unisex Embroidered Oversized T-Shirt</a></th><td>T-shirts</td><td>$32.64</td></tr>
+<tr><th scope="row"><a href="https://cafans.com/goods-158110.html">Unisex T-Shirt</a></th><td>T-shirts</td><td>$29.72</td></tr>
+<tr><th scope="row"><a href="https://cafans.com/goods-158279.html">Corteiz Jacket</a></th><td>Jackets</td><td>$42.78</td></tr>
+<tr><th scope="row"><a href="https://cafans.com/goods-158158.html">Jacket - 0608260</a></th><td>Jackets</td><td>$27.50</td></tr>
+</tbody>
+</table>
+</div>
+<p><a href="https://cafans.com/">Browse the full CAFANS catalog</a></p>
+</section>
+<section id="ordering">
+<h2>From product link to shipping quote</h2>
+<div class="guide">
+<article><h3>Confirm the variant</h3><p>Open the CAFANS listing and check whether SuperBuy is available under Buy Link. At the agent, confirm the seller, size, color and quantity before paying. Compare garment measurements with a piece you already own, using the same measurement method.</p></article>
+<article><h3>Review warehouse photos</h3><p>If inspection photos are available, check the size label and color against your order. For shoes, compare both soles and check that the requested length measurement is visible. For clothing, check the print placement, seams and zipper. If you see a mismatch, check the return window before approving shipment.</p></article>
+<article><h3>Compare the total cost</h3><p>Add the item price, domestic delivery, agent fees, international freight and any applicable import charges. Compare shipping quotes using the packed dimensions and weight. A bulky, light jacket can cost more to ship if the carrier bills by volumetric weight.</p></article>
+</div>
+</section>
+<section id="faq">
+<h2>SuperBuy spreadsheet FAQ</h2>
+<details><summary>Where do the product listings come from?</summary><p>This independent guide features products listed on CAFANS. Each product name opens its CAFANS detail page.</p></details>
+<details><summary>What if SuperBuy is missing from Buy Link?</summary><p>If CAFANS shows a source URL, copy it into SuperBuy and verify that it opens the correct item. Check with the agent if the link or item is unsupported.</p></details>
+<details><summary>How should I compare two similar listings?</summary><p>Save both seller links and note the matching sizes, measurements and variants. Compare the cost of the same variant in the same currency, including domestic shipping. Keep the date of the comparison so you can recheck prices later.</p></details>
+</section>
+</main>
+<footer class="wrap">Independent shopping guide · Product listings from <a href="https://cafans.com/">CAFANS</a></footer>
+<script>
+const query = document.querySelector('#query');
+const category = document.querySelector('#category');
+const rows = Array.from(document.querySelector('#products').rows);
+const count = document.querySelector('#count');
+
+function filterProducts() {
+  const term = query.value.trim().toLowerCase();
+  let visible = 0;
+  for (const row of rows) {
+    const nameMatches = row.cells[0].textContent.toLowerCase().includes(term);
+    const categoryMatches = !category.value || row.cells[1].textContent === category.value;
+    row.hidden = !(nameMatches && categoryMatches);
+    visible += Number(!row.hidden);
+  }
+  count.textContent = visible ? `${visible} of ${rows.length} products` : 'No matching products.';
+}
+
+query.addEventListener('input', filterProducts);
+category.addEventListener('change', filterProducts);
+document.querySelector('#filters').hidden = false;
+filterProducts();
+</script>
+</body>
+</html>
